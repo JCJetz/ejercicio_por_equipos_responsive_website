@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+
+    <link rel="stylesheet" href="contact.css"> 
+    <link rel="stylesheet" href="home.css"> 
+</head>
+<body>
+    
+
+<!--Cabecera-->
+<div class="nav">
+        
+  <div class="nav-header">
+    <div class="nav-title">
+      <img class="nav-title" src="imagenes/logo-html.svg" alt="">
+      
+
+    </div>
+  </div>
+  <div class="nav-btn">
+    <label for="nav-check">
+      <span></span>
+      <span></span>
+      <span></span>
+    </label>
+  </div>
+  
+
+  
+
+  <!-- navegacion  -->
+
+  <div class="nav-links">
+    <a href="contact.html">Contact</a>
+    <a href="home.html">Home</a>
+    <a href="board.html">Board</a>
+
+
+
+      <!--<div class="box-effect ease-in">ease-in</div> --> 
+
+    <a href="https://www.facebook.com/"><img src="imagenes/fb.png" alt="" class="box-effect ease-in" 
+      style="
+          border-radius: 150%;
+          width: 40px;
+          height: 40px;
+          "></a>
+
+    <a href="https://www.google.com/"><img src="imagenes/insta.png" alt="" class="box-effect ease-in" 
+      style="
+          border-radius: 150%;
+          width: 40px;
+          height: 40px;
+          "></a>
+
+    <a href="https://www.youtube.com/"><img src="imagenes/yt.png" alt="" class="box-effect ease-in" 
+      style="
+          border-radius: 150%;
+          width: 40px;
+          height: 40px;
+          ">    </a>      
+
+    <a href="https://www.twitter.com/"><img src="imagenes/twitter.png" alt="" class="box-effect ease-in" 
+      style="
+      border-radius: 150%;
+      width: 40px;
+      height: 40px;
+      ">
+      </a>
+
+  </div>
+<!-- cierre nav -->
+</div>
+
+
+
+<!--Contact-->
+
+<div class="container">
+
+  
+  <div class="title">
+    <h1>Formulario de contacto</h1>
+    <p>Gracias por tomarte el tiempo para contactar con nosotros ayudarnos a mejorar</p>
+  </div>
+
+  <form action="" method="post" autocomplete="off">
+
+    <div class="datos-nombe">
+
+      <label for="name">Nombre</label> 
+      <input id="name" type="text" required placeholder="Introduce su nombre" /> 
+          
+    </div>
+    
+    <div class="datos-email">
+
+          <label for="email">Email</label>
+          <input id="email" type="email" placeholder="Introduce tu emal email@gmail.com" />
+    
+    </div>
+    
+    <div class="datos-edad">
+
+          <label for="age">Age</label>
+          <input id="age" type="age" placeholder="Introduce tu edad, debes ser mayor de edad" />
+
+    </div>
+
+
+
+    <!--  <p class="rol">¿Que rol describe mejor tu situación actual?</p>   -->
+
+    <div class="select">
+
+        <p class="rol">¿Que rol describe mejor tu situación actual?</p>
+
+        <!--  <form action="/action_page.php"> --> 
+
+        <label for="so"></label> 
+        <select id="so" name="so">
+          <option value="" selected="selected">- Selecciona tu rol actual -</option>
+          <option value="estudiante">Estudiante</option>
+          <option value="completo">Trabajo a tiempo completo</option>
+          <option value="freelance">Freelance</option>
+          <option value="buscanco">Buscanco trabajo</option>
+
+          <option value="otro">Otro</option>
+        </select>
+    </div>
+
+   
+
+
+
+    <!--type="radio"-->
+    <div class="recommend">
+      <p class="conocido">¿Recomendarías esta página a un conocido?</p>      
+      
+      <div class="definitivamente">
+      <input type="radio" name="recommend" value="Definitivamente" />Definitivamente Sí </div>
+       
+      <div class="quizas">
+      <input type="radio" name="recommend" value="Quizás" checked="checked" />Quizás </div>
+
+
+      <div class="noseguro">
+      <input type="radio" name="recommend" value="Nose" checked="checked" />No estoy seguro   </div>
+  
+    </div>
+
+
+
+    <!--checkbox-->
+
+    <div class="info-receive">
+      <p class="apliquen">Que recomendaciones te gustaría recibir? Marca todas las que apliquen</p>
+    </div>
+    
+    <div class="checkbox-info">
+
+      <input type="checkbox" name="info" id="front">
+      <label for="info">Proyectos Front-end</label>
+
+      <input type="checkbox" name="info" id="back">
+      <label for="info">Proyectos Back-end</label>
+
+      <input type="checkbox" name="info" id="marketing">
+      <label for="info">Social Media, Marketing</label>
+
+      <input type="checkbox" name="info" id="videojuegos">
+      <label for="info">Desarrollo de Videojuegos</label>
+
+      <input type="checkbox" name="info" id="tutoriales">
+      <label for="info">Tutoriales de UX/UI</label>
+
+      <input type="checkbox" name="info" id="otros">
+      <label for="info">Otros</label>
+
+    </div>
+
+  </form>
+<!--container-->
+</div>
+<!--footer-->
+<footer>
+  <div class="footer">
+  <p>@Equipo Abril 2022</p>
+</footer>
+
+
+</body>
+</html>

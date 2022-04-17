@@ -1,0 +1,241 @@
+* {
+    margin: 0;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+
+.container {
+    flex-wrap: wrap; 
+   justify-content: center; 
+   align-content: center;
+     
+}
+
+@font-face {
+  font-family:'Oswald';
+  src: url('fonts/Oswald-Regular.ttf');
+}
+
+ /**/
+
+body {
+    background-image: url(https://images.unsplash.com/photo-1484807352052-23338990c6c6?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: grid;
+    max-width: 100%;
+    place-items: center;
+    font-family: 'Oswald', sans-serif; 
+    /**/
+  
+  }
+
+  .title {
+    font: 1.5em sans-serif;
+    color: aliceblue;
+    margin-top: 80px;
+    text-align: center;
+  }
+
+
+  p {
+    padding: 20px;   /**/
+    color: white;
+    text-align: center;
+  }
+
+
+
+
+
+.datos-nombe {
+  /*display: flex;   */ 
+  color: white;
+  justify-content: center;
+
+  }
+
+
+
+  /*label[for="xxx"]*/
+label[for="name"] {
+  display: flex;
+  justify-content: center;
+  color: white;
+
+  align-self: center;
+}
+
+
+  #name {
+    display: grid;
+    width: 100%;
+    line-height: 1.5;
+    padding: 15px 10px;
+    margin: 30px;
+}
+    /* */
+
+ /*label[for="xxx"]*/
+ label[for="email"] {
+  display: flex;
+  justify-content: center;
+  color: white;
+  align-self: center;
+}
+  #email {
+    display: grid;
+    width: 100%;
+    line-height: 1.5;
+    padding: 15px 10px;
+    margin: 30px;
+  }
+
+ /*label[for="xxx"]*/
+ label[for="age"] {
+  display: flex;
+  justify-content: center;
+  color: white;
+  align-self: center;
+    
+}
+
+#age {
+    display: grid;
+    width: 100%;
+    line-height: 1.5;
+    padding: 15px 10px;
+
+    margin: 30px;
+}
+
+.li {
+    display: grid;
+    width: 700px;
+    height: 45px;
+    margin: 30px
+  }
+
+  .rol {
+    font: 1.5em;
+    color: aliceblue;
+    text-align: center;
+
+    line-height: 1.5;
+    padding: 15px 10px;
+
+} 
+ 
+
+
+#so {
+    display: grid;
+    width: 100%;
+    line-height: 1.5;
+    padding: 15px 10px;
+    border: 1px solid var(--borderFormEls);
+    color: var(--white);
+  /**/  
+
+}
+ /*label[for="xxx"]*/
+ label[for="so"] {
+    display: flex;
+    color: white;
+    justify-content: center;
+    align-self: center;
+
+   
+}
+
+  /**/
+
+
+
+  .recommend {
+     
+  align-items: center; 
+  color: white;
+  line-height: 3.5;
+  padding: 15px 10px;
+  font-size: x-large;
+}
+
+  .conocido {
+   /* font: 1.5em; */
+   color: aliceblue;
+   text-align: center;
+
+   line-height: 1.5;
+   padding: 15px 10px;
+    
+}
+/*  yo continuar aqui
+
+
+.definitivamente {
+  justify-content: center;
+  color: white;
+  align-self: center;
+
+}
+  
+.quizas {
+
+  justify-content: center;
+  color: white;
+  align-self: center;
+}
+
+.noseguro {
+
+  
+}
+  */
+
+
+
+/**/
+.info-receive {
+    font: 1.5em sans-serif;
+    color: aliceblue;
+    text-align: center;
+}
+
+.apliquen {
+    font: 1.5em sans-serif;
+    color: aliceblue;
+    text-align: center;
+
+}
+
+
+.checkbox-info {
+    color: white;
+    font: 1em sans-serif;
+    display: grid;
+    margin: 30px;
+
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+}
+
+
+.footer {
+  background-color: #1b1c20;
+  color: #ffffff;
+  text-align: center;
+  text-shadow: 1px 1px #040404;
+
+  height:70px;
+  width:100%;
+  padding:6px;
+ 
+  position: fixed;
+  bottom: 0;   
+}
+ 
+    
