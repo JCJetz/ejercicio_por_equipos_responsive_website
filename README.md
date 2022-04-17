@@ -3,7 +3,7 @@
 
 # He creado una estructura con:
 
-* HTMLs del home, contact y board, con el header y footer ya incluídos.
+* HTMLs del home, contact (lo he empezado) y board, con el header y footer ya incluídos.
 * CSSs correspondientes. Tal vez deberemos consolidarlos en solo un style.css mas adelante.
 * Una carpeta /fonts, que contiene la fuente que nos piden.
 * La carpeta /imagenes, donde deberíamos juntar todas las imágenes que necesitamos.
