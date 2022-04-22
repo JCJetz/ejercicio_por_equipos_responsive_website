@@ -153,10 +153,6 @@ body {
 /*cierro nav */
 
 /* main */
-main {
-  background-color: pink;
-
-}
 
 #wrap {
   width: 90%;
@@ -168,12 +164,13 @@ main {
   margin: 30px auto;
 }
 
-#roto:checked~#marco {
+ #roto:checked~#marco {
   transform: rotateZ(180deg)
-}
+} 
 
 #roto:checked~.marco_tablero_rotate {
-  transform: rotateZ(80deg)
+  transform: rotateX(80deg);
+  background:red;
 }
 
 #marco {
@@ -199,13 +196,12 @@ main {
 
 .marco_tablero_gris {
   background-color: #999999;
-  border: 1px solid black
+  border: 1px solid black;
 }
 
 .marco_tablero_rotate {
   transition: 1s linear;
-}
-
+} 
 
 /* ==================================================== */
 
