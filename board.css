@@ -8,9 +8,14 @@
 }
 
 body {
+
   margin: 0px;
   font-family: 'Oswald', sans-serif;
-  /**/
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: space-between;
+  
 }
 
 
@@ -38,7 +43,6 @@ body {
 
 }
 
-
 .box-effect.ease-in:hover {
   width: 55px;
   height: 55px;
@@ -48,11 +52,6 @@ body {
   transform: scale(1.25);
 
 }
-
-
-
-
-
 
 .nav>.nav-btn {
   display: none;
@@ -141,11 +140,9 @@ body {
   color: #ffffff;
   text-align: center;
   text-shadow: 1px 1px #040404;
-
   height: 70px;
   width: 100%;
   padding: 6px;
-
   position: fixed;
   bottom: 0;
 }
@@ -155,27 +152,32 @@ body {
 /* main */
 
 #wrap {
-  width: 90%;
-  min-width: 480px;
+  width: 100vw;
+  height: 100vw;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  padding: 20px;
-  margin: 30px auto;
+  align-content: center;
+  justify-content: center;
+
 }
 
- #roto:checked~#marco {
+#wrap label {
+  font-size: 1.5rem;
+
+}
+
+#roto:checked~#marco {
   transform: rotateZ(180deg)
-} 
-
-#roto:checked~.marco_tablero_rotate {
-  transform: rotateX(80deg);
-  background:red;
 }
+
+ #roto:checked ~ #marco >.marco_tablero_rotate {
+  transform: rotatex(180deg);
+ }
 
 #marco {
-  width: 85%;
-  min-width: 420px;
+  width: 85vw;
+  height: 85vw;
   margin: 0 auto;
   display: grid;
   grid-template-columns: repeat(8, 1fr);
@@ -185,7 +187,7 @@ body {
   text-align: center;
   margin: 20px;
   margin: 0 auto;
-  transition: 1s linear;
+  transition: 0.5s linear;
   margin-top: 30px;
 }
 
@@ -200,33 +202,92 @@ body {
 }
 
 .marco_tablero_rotate {
-  transition: 1s linear;
-} 
+  transition: 0s linear;
+}
+
+/* ==================================================== */
+
+@media (min-width:300px) {
+body{
+  min-width:300px !important;
+}
+
+  #marco {
+    border: 20px solid #000;
+    font-size: .8rem;
+
+  }
+
+  #wrap label {
+    font-size: 1rem;
+  }
+  
+  main{
+    margin-bottom:-150px;
+  }
+}
+
+/* ==================================================== */
+
+@media (min-width:480px) {
+  
+  #marco {
+    border: 20px solid #000;
+    font-size: 2rem;
+
+  }
+
+  #wrap label {
+    font-size: 1.2rem;
+  }
+}
+
+  
+
 
 /* ==================================================== */
 
 @media (min-width:700px) {
   #marco {
     border: 20px solid #000;
-    font-size: 3.5rem;
+    font-size: 2.6rem;
   }
+
+  #wrap label {
+    font-size: 2rem;
+  }
+
 }
 
 /* ================================================================== */
 
 @media (min-width:1024px) {
+  #wrap{
+    height:auto;
+  }
   #marco {
     border: 20px solid #000;
-    font-size: 4.5rem;
+    font-size: 4rem;
+  }
+
+  #wrap label {
+    font-size: 2rem;
+  }
+
+  main{
+    margin-bottom:150px;
   }
 }
-
 /* ================================================================== */
 
 @media (min-width:1440px) {
   #marco {
     border: 20px solid #000;
-    font-size: 5.5rem;
+    font-size: 4.6rem;
+  }
+
+  #wrap label {
+    font-size: 2rem;
   }
 }
 
