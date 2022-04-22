@@ -3,7 +3,6 @@ body {
     flex-direction:row;
     justify-content: center;
     flex-wrap:wrap;
-    background-color: pink;
     align-content:flex-start;
 }
 
@@ -176,6 +175,10 @@ body {
     body{
         display:flex;
         flex-direction:row;
+        align-content:stretch;
+        justify-content: center;
+        flex-wrap:wrap;
+        align-content:flex-start;
     }
 
     #content {
@@ -185,7 +188,7 @@ body {
             "memb memb memb"
             "pla1 pla2 pla3";
         align-content: center;
-        position: absolute;
+       
     }
 
     #memb {
@@ -206,6 +209,24 @@ body {
         height: 320px;
         padding-top: 0;
         padding-bottom: 40px;
+        transition: all .3s linear;
+    }
+
+    #circulo {
+        position: relative;
+        top: 43px;
+        left: 110px;
+        width: 50px;
+        height: 50px;
+        transition: all .5s ease;
+    }
+
+    .cards:hover{
+        transform: scale(1.8);
+    }
+
+    .cards:hover > .plan > #circulo{          
+         transform:rotate(360deg);
     }
 
     h3 {
@@ -229,20 +250,24 @@ body {
 
     }
 
+    
 
-
-    #circulo {
-        position: relative;
-        top: 30px;
-        left: 110px;
-        width: 50px;
-        height: 50px;
-    }
+    
 
     .cards button {
-        background-color: red;
-        height:40px;
-        
+        background-color: #74ce6a;
+        width: 150px;
+        height: 35px;
+        border-radius: 8px;
+        box-shadow: 0 2px 3px green;
+        cursor: pointer;
+        color: #ffffff;
+        padding:10px;
+    }
+    
+    .cards button:hover{
+        box-shadow: none;
+        border: none;
     }
 
 }
