@@ -4,7 +4,7 @@
 # V2
 
 * Mergeado commit de Luis a develop con el tablero y los pricing cards.
-* Finalizado formulario de contacto y puseado a develop.
+* Finalizado formulario de contacto y pusheado a develop.
 
 Antes de hacer otro pull request, recordad traeros antes estos cambios de 'upstream', añadiendo este repositorio (https://github.com/JCJetz/ejercicio_por_equipos_responsive_website.git )como upstream (git remote add upstream ó añadirlo en settings/remotes de sourcetree) y hacer pull desde él (dándole a fetch antes para ver nuevas branches con el botón se sourcetree).
 
