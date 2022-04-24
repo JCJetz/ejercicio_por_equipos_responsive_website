@@ -154,22 +154,21 @@ label[for="so"] {
 }
 
 .conocido {
- color: aliceblue;
- text-align: center;
- line-height: 1.5;
- padding: 15px 10px;
- display: flex; 
+  color: aliceblue;
+  text-align: center;
+  line-height: 1.5;
+  padding: 15px 10px;
+  display: flex; 
 }
 
 .radios {
   display: flex;
   justify-content: space-around;
+}
 
-  span {
+.span {
     position: absolute;
     transform: translateX(100%);
-  }
-
 }
 
 input[type="radio" i] {
@@ -230,17 +229,18 @@ input[type="radio" i] {
   font: 1em sans-serif;
   display: grid;
   margin: 30px;
-  align-content: center;
-  justify-content: center;
-  align-items: center;
+  align-content:center;
+  justify-content:center;
+  align-items:center;
   justify-items: center;
 }
 
 .checkbox-info input {
-  vertical-align: left;
+  vertical-align:right;
 }
+
 .checkbox-info label {
-  vertical-align: right;
+  vertical-align: left;
   font-weight:normal;
   font-size:large;
 }

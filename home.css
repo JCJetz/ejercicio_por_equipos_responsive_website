@@ -1,4 +1,6 @@
 * {
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
 }
 
@@ -35,24 +37,16 @@ body {
 
 .nav-title {
 height: 100%;
-
 }
 
-
-  .box-effect.ease-in:hover {
+.box-effect.ease-in:hover {
   width: 55px;
   height: 55px;
   border-radius: 150px;
     
   transition: all 0.25s ease-in; 
   transform: scale(1.25);
-  
 }  
-
-
-
-
-
 
 .nav > .nav-btn {
   display: none;
@@ -70,8 +64,7 @@ height: 100%;
   padding: 7px 10px 13px 10px;
   text-decoration: none;
   color: #000000;
- /* justify-content: space-around;*/
-
+/* justify-content: space-around;*/
 }
 
 .nav > .nav-links > a:hover {
@@ -83,7 +76,196 @@ height: 100%;
   display: none;
 }
 
+/* banner video  */
+
+.container_banner {
+  display: flex;
+  position: relative;
+  text-align: center;
+  word-wrap: break-word;
+}
+
+.video{
+  width: 100%;
+  height: auto;
+  opacity: 0.8;
+}
+
+.centered_text_video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: 'Oswald', sans-serif;
+}
+
+.text_video1{
+  font-family: 'Oswald', sans-serif;
+  font-size: 1rem;
+  font-weight: bold;
+  color: white;
+  margin-bottom: 10px;
+  text-shadow: 5px 2px 7px rgba(0,0,0,0.99);
+}
+
+.text_video2{
+  font-family: 'Oswald', sans-serif;
+  font-size: 3rem;
+  font-weight: bold;
+  color: white;
+  margin-top: 10px;
+  text-shadow: 5px 2px 7px rgba(0,0,0,0.99);
+}
+
+/* cards css */
+
+/* container cards */
+.container_cards {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 20px;
+  gap: 15px;
+}
+
+.cards_text_h1{
+  padding: 10px;
+  text-align: center;
+  margin-left: 80px;
+  font-size: 2rem;
+  color: gray;
+  font-style:italic;
+
+}
+
+.flip-card-front h2{
+  position: absolute;
+  top: 20%;
+  bottom: 50%;
+  transform: translate(-50%, -50%);
+  margin-left: 195px;
+  margin-top: 20px;
+  color: white;
+  text-shadow: 8px 7px 6px #000000;
+}
+
+/* card 1 */
+
+/* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
+.flip-card {
+  background-color: transparent;
+  width: 400px;
+  height: 250px;
+  border-radius: 40px 40px 40px 40px;
+  perspective: 1000px;
+  -webkit-box-shadow: 11px 3px 25px 2px rgba(0,0,0,0.62); 
+  box-shadow: 11px 3px 25px 2px rgba(0,0,0,0.62);
+}
+
+/* This container is needed to position the front and back side */
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+/* Do an horizontal flip when you move the mouse over the flip box container */
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-inner2 {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+.flip-card:hover .flip-card-inner2 {
+  transform: rotateY(180deg);
+}
+
+/* Position the front and back side */
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden; 
+  backface-visibility: hidden;
+}
+
+/* Style the front side (fallback if image is missing) */
+.flip-card-front {
+  background-color: #bbb;
+  color: black;
+  border-radius: 40px 40px 40px 40px;
+}
+
+/* Style the back side */
+.flip-card-back {
+  background-color: #2D2D2D;
+  transform: rotateY(180deg);
+  padding: 5px;
+}
+
+.flip-card-back h1 {
+  color: white;
+  font-family: 'Oswald';
+  text-align: center;
+  margin-top: 10px;
+
+}
+
+.flip-card-back p {
+  color: gray;
+  font-family: 'Oswald';
+  text-align: center;
+  padding: 20px;
+
+}
+
+
+.footer {
+  background-color: #1b1c20;
+  color: #ffffff;
+  text-align: center;
+  text-shadow: 1px 1px #040404;
+
+  height:70px;
+  width:100%;
+  padding:6px;
+
+  position: fixed;
+  bottom: 0;  
+  left:0; 
+}
+
+/* Extra small devices (phones, 600px and down) */
+
 @media (max-width:600px) {
+
+
+  .centered_text_video{
+    max-width: 375px;
+    max-height: 100px;
+  }
+
+  .text_video1{
+    font-size: 10px;
+  }
+  .text_video2{
+    font-size: 25px;
+  }
+
+  .container_cards{
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 400px;
+  }
   .nav > .nav-btn {
     display: inline-block;
     position: absolute;
@@ -128,18 +310,63 @@ height: 100%;
     overflow-y: auto;
   }
 }
+  
+/* Small devices (portrait tablets and large phones, 600px and up) */
+  
+@media (min-width:600px) {
+  .container_cards{
+      display: flex;
+      flex-wrap: wrap;
+      max-width: 400px;
+  }
 
-.footer {
-  background-color: #1b1c20;
-  color: #ffffff;
-  text-align: center;
-  text-shadow: 1px 1px #040404;
+  .text_video1{
+    font-size: 1rem;
+  }
+  .text_video2{
+    font-size: 2.5rem;
+  }
 
-  height:70px;
-  width:100%;
-  padding:6px;
- 
-  position: fixed;
-  bottom: 0;  
-  left:0; 
+  .container_cards{
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 400px;
+  }
 }
+
+/* Large devices (laptops/desktops, 992px and up) */
+
+@media (min-width: 992px) {
+  .container_cards{
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 400px;
+  }
+
+  .text_video1{
+    font-size: 1rem;
+  }
+  .text_video2{
+    font-size: 3rem;
+  }
+
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media (min-width: 1200px) {
+
+  .container_cards{
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 400px;
+  }
+
+  .text_video1{
+    font-size: 1rem;
+  }
+  .text_video2{
+    font-size: 3rem;
+  }
+
+}
+  
