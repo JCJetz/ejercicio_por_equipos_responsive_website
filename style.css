@@ -253,6 +253,15 @@ height: 100%;
 
 /* cards css */
 
+.container{
+  text-align:center;
+  padding-bottom: 70px;
+}
+
+.titulo_cards {
+  margin:35px;
+}
+
 /* container cards */
 .container_cards {
   display: flex;
